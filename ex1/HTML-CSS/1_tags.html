@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tag para apresentar o site no motor de busca -->
+    <meta name="description" content="Página com as tags html">
+    <title>tags html</title>
+</head>
+
+<body>
+    <!-- Headings e parágrafos -->
+    <h1>Headings</h1>
+
+    <h1>Título principal</h1>
+    <p>Pode ser utilizado apenas uma vez por página</p>
+    <h2>Título secundário</h2>
+    <p>Pode ser utilizado várias vezes por página</p>
+    <h3>Título secundário</h3>
+    <p>Pode ser utilizado várias vezes por página</p>
+    <h4>Título secundário</h4>
+    <p>Pode ser utilizado várias vezes por página</p>
+    <h5>Título secundário</h5>
+    <p>Pode ser utilizado várias vezes por página</p>
+    <h6>Título secundário</h6>
+    <p>Pode ser utilizado várias vezes por página</p>
+
+    <hr>
+
+    <!-- Listas -->
+    <h2>Listas</h2>
+    <!-- lista desordenada -->
+    <ul>
+        <li>Home</li>
+        <li>Sobre nós
+            <ul>
+                <li>Quem Somos</li>
+                <li>Missão</li>
+                <li>Valores</li>
+            </ul>
+        </li>
+        <li>Serviços</li>
+        <li>Contactos</li>
+    </ul>
+    <!-- Listas ordenadas -->
+    <ol>
+        <li>Home</li>
+        <li>Sobre nós</li>
+        <li>Serviços</li>
+        <li>Contactos</li>
+    </ol>
+
+    <hr>
+
+    <!-- Links -->
+    <h2>Links</h2>
+    <a href="https://google.pt" target="_blank">
+        <h2>Google</h2>
+    </a>
+
+    <!-- Imagens -->
+    <h2>Imagens</h2>
+    <a href="https://dev.w3.org/html5/spec-LC/" target="_blank"><img src="html.png" alt="icone do html5"></a>
+    <img src="https://source.unsplash.com/random" alt="Imagens aleatorias" width="300px">
+
+    <hr>
+
+    <!-- Tabelas -->
+    <h2>Tabelas</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Localidade</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>João Silva</td>
+                <td>jsilva@gmail.com</td>
+                <td>Lisboa</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Ana Gomes</td>
+                <td>ana.gomes@gmail.com</td>
+                <td>Alenquer</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>Pedro Dias</td>
+                <td>pdias@outlook.com</td>
+                <td>Almeirim</td>
+                <td>31</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <hr>
+
+    <!-- Formulários -->
+    <h2>Formulários</h2>
+    <form>
+        <label for="nome">Nome</label><br>
+        <input type="text" name="nome" placeholder="insira o seu nome"><br>
+        <label for="email">Email</label><br>
+        <input type="email" name="email" placeholder="insira o seu email"><br>
+        <label for="password">Password</label><br>
+        <input type="password" name="passoword" placeholder="insira uma password"><br>
+        <label for="mensagem">Mensagem</label><br>
+        <textarea name="mensagem" cols="30" rows="5"></textarea><br><br>
+
+        <label for="cursos">Selecione um curso</label><br>
+        <select name="cursos">
+            <option value="1">Selecione...</option>
+            <option value="2">Licenciatura</option>
+            <option value="3">Mestrado</option>
+            <option value="4">Pós-graduação</option>
+            <option value="5">Tesp</option>
+        </select><br><br>
+
+        <h3>Excolha o sexo</h3>
+        <label for="M">Masculino</label>
+        <input type="radio" name="sexo" Value="Masculino">
+        <label for="F">Feminino</label>
+        <input type="radio" name="sexo" Value="Feminino">
+        <label for="O">Outro</label>
+        <input type="radio" name="sexo" Value="Outro">
+
+        <h3>Escolha várias opções</h3>
+        <label for="informatica">Informática</label>
+        <input type="checkbox" name="cursos">
+        <label for="gestao">Gestão</label>
+        <input type="checkbox" name="cursos">
+        <label for="vendas">Vendas</label>
+        <input type="checkbox" name="cursos">
+        <br><br>
+
+        <label for="data">Insira a sua data de nascimento</label><br>
+        <input type="date" name="data">
+    </form>
+
+    <div>
+        <h2>Titulo</h2>
+        <p>texto</p>
+    </div>
+</body>
+
+</html>

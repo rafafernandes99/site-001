@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes e IDs</title>
+
+    <style>
+        /* retirar margens e paddings da pagina */
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* alterar a cor fundo e a fonte */
+        
+        body {
+            background: #f4f4f4;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* alteramos a cor de fundo e cor da letra */
+        
+        #logo {
+            color: #fff;
+            padding: 25px 50px 25px 50px;
+            border-bottom: 3px solid #000;
+            margin-bottom: 25px;
+            background-color: darkgray;
+        }
+        /* aumentamos a margem em cima e em baixo */
+        
+        .navegacao {
+            margin: 25px 0px;
+        }
+        /* retiramos as bolas das listas */
+        
+        .links {
+            margin-left: 50px;
+            list-style: none;
+        }
+        /* metemos os li na horizontal e arredondamos os cantos */
+        
+        .links li {
+            display: inline;
+            /* insere li na horizontal */
+            background-color: burlywood;
+            margin: 10px 0px;
+            padding: 10px;
+            border-radius: 10px;
+            /*redonda cantos */
+        }
+        
+        li a {
+            text-decoration: none;
+            /* retira sublinhado dos links */
+            color: #fff;
+        }
+        /* define outra cor quando se passa com o cursor por cima */
+        
+        li:hover {
+            background-color: lightgray;
+        }
+        /* muda cor do texto do link quando se passa por cima */
+        
+        li a:hover {
+            color: darkgray;
+        }
+        /* definimos o tamanho do corpo da página */
+        
+        .main {
+            width: 75%;
+            margin: 5% auto;
+            /* border: 1px solid black; */
+        }
+        /* alinhamos o texto ao centro */
+        
+        .slideshow {
+            text-align: center;
+            color: darkcyan;
+            margin-bottom: 25px;
+            text-transform: capitalize;
+        }
+        
+        .seccao {
+            background: burlywood;
+            padding: 10px;
+            margin: 10px 0px;
+            border-radius: 10px;
+            border-left: 3px solid red;
+            border-right: 3px solid red;
+        }
+        
+        h2.conteudo,
+        h2.servicos,
+        h2.contactos {
+            color: #fff;
+        }
+        /* aumentamos o tamanho da letra e a altura da linha */
+        
+        .texto {
+            margin: 15px 0px;
+            line-height: 30px;
+            font-size: 1.2rem;
+        }
+        
+        .footer {
+            background: darkgray;
+            padding: 30px 0px;
+            text-align: center;
+        }
+        
+        .footer p {
+            color: #fff;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1 id="logo">LOGOTIPO</h1>
+        <nav class="navegacao">
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Corpo da Página -->
+    <main class="main">
+        <section>
+            <h2 class="slideshow">Slideshow</h2>
+        </section>
+
+        <section class="seccao">
+            <h2 class="conteudo">Conteúdo do site</h2>
+        </section>
+
+        <section class="seccao">
+            <h2 class="servicos">Serviços da empresa</h2>
+        </section>
+
+        <section class="seccao">
+            <h2 class="contactos">Contactos da empresa</h2>
+            <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore tempore sint rerum hic minima odit quibusdam, vitae doloremque harum veniam nostrum reprehenderit reiciendis ipsam error?</p>
+        </section>
+
+    </main>
+
+    <!-- Rodape -->
+    <footer class="footer">
+        <p class="copyrigth">&copy; Todos os Direitos Reservados 2021</p>
+    </footer>
+</body>
+
+</html>
